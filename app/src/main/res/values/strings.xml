@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Music</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tracks">Tracks</string>
+    <string name="playlist">PlayList</string>
+    <string name="favourites">Favourites</string>
+    <string name="song_name">song name</string>
+    <string name="todo">TODO</string>
+    <string name="_4_10">4:10</string>
+    <string name="_0_10">0:10</string>
+    <item name="imageview" type="id"/>
+    <item name="txtsongName" type="id"/>
+    <item name="seekbar" type="id"/>
+    <item name="textstop" type="id"/>
+    <item name="buttonnext" type="id"/>
+    <item name="playButton" type="id"/>
+    <item name="buttonprevious" type="id"/>
+    <item name="textstart" type="id"/>
+</resources>

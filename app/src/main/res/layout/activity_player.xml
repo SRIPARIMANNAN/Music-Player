@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".PlayerActivity">
+
+
+    <TextView
+        android:id="@+id/txtsongName"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="68dp"
+        android:ellipsize="marquee"
+        android:fadingEdge="horizontal"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="@string/song_name"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageview">
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="146dp"
+        tools:srcCompat="@tools:sample/avatars">
+
+    </ImageView>
+
+    <SeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="389dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="152dp"
+        android:minWidth="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textstart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="652dp"
+        android:text="00:00"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+    </TextView>
+
+
+    <TextView
+        android:id="@+id/textstop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="652dp"
+        android:layout_marginEnd="27dp"
+        android:text="@string/_4_10"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/playButton"
+        android:layout_width="70px"
+        android:layout_height="70px"
+        android:layout_marginBottom="64dp"
+        android:background="@drawable/playt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </Button>
+
+    <Button
+        android:id="@+id/buttonnext"
+        android:layout_width="70px"
+        android:layout_height="70px"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="63dp"
+        android:background="@drawable/ic_skip_next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textstop">
+
+    </Button>
+
+    <Button
+        android:id="@+id/buttonprevious"
+        android:layout_width="70px"
+        android:layout_height="70px"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="63dp"
+        android:background="@drawable/ic_skip_previous"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </Button>
+
+    <Button
+        android:id="@+id/ytbtn"
+        android:layout_width="64px"
+        android:layout_height="64px"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="82dp"
+        android:layout_marginEnd="376dp"
+        android:layout_marginBottom="7dp"
+        android:background="@color/purple_200"
+        android:foreground="@drawable/youtubes"
+        app:layout_constraintBottom_toTopOf="@+id/seekbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtsongName" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
